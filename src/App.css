@@ -1,0 +1,47 @@
+/* Main chat area */
+.chat-area {
+  min-height: calc(100vh - 60px);
+}
+
+/* Sidebar */
+aside {
+  min-height: calc(100vh - 60px);
+}
+
+/* Chat messages */
+.chat-messages {
+  height: calc(100vh - 160px);
+  overflow-y: auto;
+}
+
+/* Individual messages */
+.message {
+  max-width: 75%;
+}
+
+/* Message input area */
+.message-input {
+  position: sticky;
+  bottom: 0;
+  background-color: white;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 767px) {
+  aside {
+    min-height: auto;
+  }
+
+  .chat-area {
+    min-height: auto;
+  }
+
+  .chat-messages {
+    height: auto;
+    min-height: 50vh;
+  }
+
+  .message {
+    max-width: 90%;
+  }
+}
